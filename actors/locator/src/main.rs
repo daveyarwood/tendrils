@@ -7,7 +7,7 @@ fn main() {
     let ctx = zmq::Context::new();
 
     let mut socket = ctx.socket(zmq::REP).unwrap();
-    assert!(socket.bind("tcp://*:12346").is_ok());
+    assert!(socket.bind("tcp://*:12346").is_ok(), "Unable to open port 12346");
 
     loop {
         let msg = socket.recv_msg(0).unwrap();
