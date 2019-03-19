@@ -1,11 +1,11 @@
 [package]
 name = "locator"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Dave Yarwood <dave.yarwood@gmail.com>"]
 
 [dependencies]
-schemamama_rusqlite = "0.5.0"
-schemamama          = "0.2.0"
-rusqlite            = "0.6.0"
+schemamama_rusqlite = { git = "https://github.com/marado/schemamama_rusqlite" }
+schemamama          = "0.2.1"
+rusqlite            = "0.6.1"
 time                = "0.1.35"
 zmq                 = "0.8"
